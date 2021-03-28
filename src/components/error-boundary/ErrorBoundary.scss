@@ -1,0 +1,22 @@
+@import '@scss/_utils.scss';
+
+.error-boundary {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $gray-tint-4;
+}
+
+.error-boundary__message {
+    color: red;
+    font-size: 34px;
+    margin-bottom: 16px;
+}
+
+.error-boundary__reload-btn {
+    @include button;
+    font-size: 22px;
+}

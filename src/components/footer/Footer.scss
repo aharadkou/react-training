@@ -1,0 +1,14 @@
+@import '@scss/_utils.scss';
+
+.footer {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    justify-content: center;
+    background-color: $gray-tint-1;
+}
+
+.footer__title {
+    text-align: center;
+}

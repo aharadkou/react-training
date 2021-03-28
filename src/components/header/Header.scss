@@ -1,0 +1,49 @@
+@import '@scss/_utils.scss';
+
+.header {
+    padding: 20px 56px 150px 56px;
+    background-image: url('@img/movies-background.jpg');
+    background-size: cover;
+    background-color: $gray-tint-2;
+}
+
+.header__search-container {
+    padding: 0 60px;
+}
+
+.header__search-title {
+    margin-top: 70px;
+    margin-bottom: 45px;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: 4px;
+    font-weight: 200;
+}
+
+.header__add-movie-btn {
+    @include button;
+    color: $red-tint-1;
+    background-color: rgba($color: $gray-tint-1, $alpha: 0.4);
+}
+
+.header__search-btn {
+    @include button;
+    color: $white;
+    background-color: $red-tint-1;
+    min-width: 230px;
+}
+
+.header__search-input-container {
+    display: flex;
+}
+
+.header__search-input {
+    flex: 1;
+    margin-right: 12px;
+}
+
+.header__top-container {
+    display: flex;
+    justify-content: space-between;
+}

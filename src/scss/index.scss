@@ -1,0 +1,16 @@
+@import 'utils';
+@import 'reset';
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+}
+
+.separator {
+    height: 10px;
+    background-color: $gray-tint-1;
+}

@@ -1,0 +1,11 @@
+@import '@scss/_utils.scss';
+
+.input {
+    outline: none;
+    border: none;
+    padding: 12px;
+    border-radius: 3px;
+    background-color: rgba($color: $gray-tint-1, $alpha: 0.3);
+    color: $white;
+    font-size: 18px;
+}

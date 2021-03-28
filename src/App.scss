@@ -1,0 +1,19 @@
+@import '@scss/_utils.scss';
+
+.app {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    background-color: $gray-tint-4;
+
+    & > * {
+        width: 100%;
+        max-width: 1200px;
+    }
+}
+
+.app__content {
+    flex: 1;
+}

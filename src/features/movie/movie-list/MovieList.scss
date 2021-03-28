@@ -1,0 +1,32 @@
+@import '@scss/_utils.scss';
+
+$movie-list-item-margin: 28px;
+
+.movie-list {
+    color: $gray-tint-2;
+    padding: 30px 60px 75px 60px;
+    background-color: $gray-tint-3;
+}
+
+.movie-list__items {
+    margin: -$movie-list-item-margin;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-list__item {
+    margin: $movie-list-item-margin;
+    flex: 0 1 calc(33.33% - #{$movie-list-item-margin * 2});
+}
+
+.movie-list__search-result {
+    font-size: 20px;
+    color: $white;
+    margin-bottom: 32px;
+    font-weight: 300;
+
+    & > *:first-child {
+        font-weight: 700;
+        margin-right: 6px;
+    }
+}

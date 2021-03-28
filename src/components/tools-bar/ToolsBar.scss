@@ -1,0 +1,61 @@
+@import '@scss/_utils.scss';
+
+$border-bottom-size: 4px;
+
+.tools-bar {
+    padding: 30px 60px 0 60px;
+    font-size: 18px;
+    background-color: $gray-tint-3;
+}
+
+.tools-bar__inner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: $border-bottom-size solid $gray-tint-4;
+}
+
+.tools-bar__links-container {
+    display: flex;
+    margin-bottom: -$border-bottom-size;
+}
+
+.tools-bar__link {
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    margin-right: 30px;
+    padding-bottom: 24px;
+    border-bottom: $border-bottom-size solid transparent;
+    transition: border-color 0.25s ease-in-out;
+
+    &:last-child {
+        margin-right: 0;
+    }
+    
+    &.active {
+        border-bottom: $border-bottom-size solid $red-tint-1;
+    }
+}
+
+.tools-bar__sort-container {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.tools-bar__sort-label {
+    color: $gray-tint-4;
+    margin-right: 32px;
+}
+
+select {
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    outline: none;
+    color: $white;
+    font-size: 18px;
+
+    option {
+        background-color: $gray-tint-3;
+    }
+}

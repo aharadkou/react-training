@@ -1,0 +1,11 @@
+@import '@scss/_utils.scss';
+
+.logo {
+    color: $red-tint-1;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+    & > *:first-child {
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,30 @@
+@import '@scss/_utils.scss';
+
+.movie-card {
+    color: $gray-tint-4;
+    overflow: hidden;
+}
+
+.movie-card__image {
+    height: 450px;
+    width: 100%;
+    margin-bottom: 25px;
+    object-fit: cover;
+}
+
+.movie-card__title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.movie-card__title {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.movie-card__categories {
+    font-weight: 300;
+    @include overflow-ellipsis;
+}
