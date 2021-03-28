@@ -3,6 +3,7 @@
 $movie-list-item-margin: 28px;
 
 .movie-list {
+    flex: 1;
     color: $gray-tint-2;
     padding: 30px 60px 75px 60px;
     background-color: $gray-tint-3;
