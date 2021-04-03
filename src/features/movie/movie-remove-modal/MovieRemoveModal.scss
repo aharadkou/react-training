@@ -1,0 +1,23 @@
+@import '@scss/_utils.scss';
+
+.movie-remove-modal {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px 25px 25px;
+    color: $white;
+    font-weight: 300;
+}
+
+.movie-remove-modal__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.movie-remove-modal__confirm-btn {
+    @include button;
+    color: $white;
+    background-color: $red-tint-1;
+    align-self: flex-end;
+    margin-top: 35px;
+}

@@ -1,0 +1,55 @@
+@import '@scss/_utils.scss';
+
+.movie-form {
+    padding: 0 35px 35px 35px;
+    width: 400px;
+}
+
+.movie-form__title {
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: $white;
+    font-weight: 300;
+}
+
+.movie-form__control {
+    margin-bottom: 20px;
+
+    label {
+        display: block;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $red-tint-1;
+        margin-bottom: 10px;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.movie-form__buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.movie-form__submit-btn {
+    @include button;
+    color: $white;
+    background-color: $red-tint-1;
+}
+
+.movie-form__reset-btn {
+    @include button;
+    color: $red-tint-1;
+    border: 1px $red-tint-1 solid;
+    background-color: $gray-tint-3;
+    margin-right: 10px;
+}

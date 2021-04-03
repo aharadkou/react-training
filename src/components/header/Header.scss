@@ -25,6 +25,7 @@
     @include button;
     color: $red-tint-1;
     background-color: rgba($color: $gray-tint-1, $alpha: 0.4);
+    font-size: 22px;
 }
 
 .header__search-btn {
@@ -32,6 +33,7 @@
     color: $white;
     background-color: $red-tint-1;
     min-width: 230px;
+    font-size: 22px;
 }
 
 .header__search-input-container {

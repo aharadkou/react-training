@@ -27,11 +27,7 @@ for (let i = 0; i < 10; i += 1) {
     }
 }
 
-interface MovieListProps {
-
-}
-
-const MovieList: FC<MovieListProps> = () => (
+const MovieList: FC = () => (
     <div className="movie-list">
         <p className="movie-list__search-result">
             <span>

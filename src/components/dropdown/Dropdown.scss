@@ -1,0 +1,65 @@
+@import '@scss/_utils.scss';
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown__open-btn {
+    display: flex;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    color: $white;
+    width: 40px;
+    height: 40px;
+    background-color: $gray-tint-3;
+    font-size: 30px;
+    cursor: pointer;
+
+    span::before {
+        position: relative;
+        left: 7px;
+        top: -2px;
+        content: '\2807';
+        font-size: 30px;
+    }
+}
+
+.dropdown__content {
+    position: absolute;
+    top: 25px;
+    right: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: $gray-tint-3;
+    min-width: 200px;
+    min-height: 50px;
+    padding-bottom: 10px;
+}
+
+.dropdown__close-btn {
+    @include close-button;
+
+    span {
+        &::before {
+            font-size: 18px;
+        }
+    }
+}
+
+.dropdown-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 8px 8px 20px;
+    font-weight: 300;
+    color: $white;
+    background-color: $gray-tint-3;
+    font-size: 16px;
+    text-align: left;
+
+    &:hover {
+        background-color: $red-tint-1;
+    }
+}

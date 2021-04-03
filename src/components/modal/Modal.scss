@@ -1,0 +1,39 @@
+@import '@scss/_utils.scss';
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: $gray-tint-3, $alpha: 0.8);
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal__content {
+    min-width: 50px;
+    min-height: 25px;
+    background-color: $gray-tint-3;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__logo {
+    padding: 20px 0 80px 40px;
+    align-self: flex-start;
+}
+
+.modal__close-btn {
+    @include close-button;
+
+    span {
+        &::before {
+            font-size: 28px;
+        }
+    }
+}

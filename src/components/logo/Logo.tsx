@@ -1,11 +1,7 @@
 import React, {FC} from 'react'
 import '@/components/logo/Logo.scss'
 
-interface LogoProps {
-
-}
-
-const Logo: FC<LogoProps> = () => (
+const Logo: FC = () => (
     <p className="logo">
         <span>
             netflix

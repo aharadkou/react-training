@@ -3,6 +3,7 @@
 .movie-card {
     color: $gray-tint-4;
     overflow: hidden;
+    position: relative;
 }
 
 .movie-card__image {
@@ -27,4 +28,10 @@
 .movie-card__categories {
     font-weight: 300;
     @include overflow-ellipsis;
+}
+
+.movie-card__dropdown {
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
